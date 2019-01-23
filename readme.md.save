@@ -1,0 +1,39 @@
+#latihan1
+**TUTORIAL PENGGUNAAN GIT**
+1. Download git, link (git-scm.com
+
+2. Pada saat pertama kali menggunakan git, perlu dilakukan konfigurasi user.name dan user email
+ Config Global Repository
+{$ git config --global user.name "nama_user"
+ 
+$ git config --global user.email "nama_user" }
+
+3. Buat directory project praktikum pertama dengan nama latihan1
+{ $ mkdir latihan1
+$ cd latihan1 }
+
+4. membuat repository local
+{ $ git init }
+
+5. Menambahkan file baru pada repository 
+{ $ echo "#latihan1" >> README.md
+$git add README.md }
+
+6. Simpan perubahan ke dalam database
+{ $git commit -m "File pertama saya" }
+
+7. Membuat repository server
+{ server repository yang akan kita gunakan adalah
+http://github.com
+- Anda harus membuat akun terlebih dahulu. pada laman
+github, klik tombol start a project, atau
+- Dari menu (icon +)nklik repository
+- Isi nama repositorynya, misak : labpy1.
+
+8. Menambahkan remote repository
+{ $ git remot add origin [URL] 
+
+9. Push (Mengirim perubahan ke server
+{ $ git push -u origin master }
+
+10. Lihat hasilnya pada server repository
